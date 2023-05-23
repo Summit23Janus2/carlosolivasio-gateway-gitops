@@ -1,0 +1,15 @@
+app:
+  name: carlosolivasio-poi-gateway-app
+  namespace: carlosolivasio
+  cluster: .apps.summit23blues.6mbu.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23Janus2/carlosolivasio-gateway
+  org: Summit23Janus2
+  name: carlosolivasio-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: carlosolivasio/poi-gateway-app
+  tag: latest
